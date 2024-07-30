@@ -1,0 +1,567 @@
+@import url('https://fonts.cdnfonts.com/css/romero');
+
+body {
+	margin:0;
+	background-color: BLACK;
+		font-family: Rubik,sans-serif;
+}
+
+
+/* Меню бокового бара */
+.sidebar {
+  height: 100%; /* 100% Полный рост */
+  width: 0; /* 0 ширина - измените это с помощью JavaScript */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Оставайтесь на вершине */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Черный */
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+  padding-top: 60px; /* Поместите содержимое 60px сверху */
+  transition: 0.5s; /* 0.5 секунд эффект перехода для скольжения в боковой панели */
+
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .sidebar {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgb(0, 0, 0, 0.7);  
+  }
+
+/* На боковой панели */
+.sidebar a {
+  padding: 30px 8px 8px 42px;
+  text-decoration: none;
+  font-size: 32px;
+  color: #818181;
+  display: block;
+
+  color: white;
+
+}
+
+#iop {
+	float: right;
+	margin-right: 20px;
+}
+
+.closebtm:hover {
+	background: none;
+}
+
+	
+/* При наведении курсора мыши на навигационные ссылки измените их цвет */
+.sidebar a:hover {
+  color: #b8b8b8;
+
+ 
+}
+
+/* Положение и стиль кнопки закрытия (верхний правый угол) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Кнопка для открытия бокового бара */
+
+
+/* Стиль содержимого страницы - используйте это, если вы хотите переместить содержимое страницы вправо при открытии боковой навигации */
+#main {
+  transition: margin-left .5s; /* Если вы хотите эффект перехода */
+  padding: 20px;
+}
+
+/* На небольших экранах, где высота меньше 450px, измените стиль sidebar (меньше отступов и меньший размер шрифта) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+.openbtn {
+	font-size: 24px;
+	background: none;
+	border: none;
+	color: white;
+	margin-left:5px;
+	
+	transition: 0.2s;
+	border-radius: 4px;
+	float: left;
+	
+	font-weight: 600;
+}
+
+
+.openbtn:hover {
+	cursor:pointer;
+	background-color:#454545;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  
+.navbar {
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    background-color: rgb(36, 36, 36, 0.8);  
+  }
+.navbar {
+		overflow: hidden;
+		padding: 7px 7px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		border-bottom: 1px solid #424242;
+	
+		padding-right: 15px;
+
+  
+}
+#logo {
+	font-family: 'Romero', sans-serif;
+	font-size: 30px;
+	
+
+}
+
+
+
+.navbar a {
+ 
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 3px 9px;
+  text-decoration: none;
+  
+  
+}
+
+.navbar a:hover {
+
+}
+
+#mig {
+	margin: 0;
+	text-align: left;
+}
+
+.main {
+  padding: 16px;
+  padding-top:80px;
+  margin-top: 300px;
+  margin: auto;
+  max-width: 1200px;
+  color: white;
+  text-align: center;
+  
+}
+#span {
+	font-size: 20px;
+ transform: rotate(90deg);
+  transform-origin: top left;
+
+}
+
+#contacts button{
+	border: none;
+		background: #111111;
+	color: white;
+	border-radius: 12px;
+	padding: 15px 15px;
+	font-size: 20px;
+	margin: 15px;
+	cursor: pointer;
+	width: 200px;
+	height: 180px;
+}
+
+#contacts a {
+	text-decoration: none;
+	color: white;
+	
+}
+
+
+#contacts a:hover {
+	color: gray;
+}
+
+
+#contactsx button{
+	border: none;
+	background: black;
+	color: white;
+	border-radius: 12px;
+	padding: 15px 15px;
+	font-size: 20px;
+	margin: 15px;
+	cursor: pointer;
+	width: 200px;
+	height: 180px;
+}
+
+#contactsx a {
+	text-decoration: none;
+	color: white;
+	
+}
+
+#contactsx img {
+	border-radius: 15px;
+}
+
+#contactsx a:hover {
+	color: gray;
+}
+
+
+
+
+#shapka img {
+	width: 320px;
+	height: 500px;
+	float: left;
+	margin-right: 30px;
+	text-align: left;
+}
+
+#shapka h1 {
+	text-align: left;
+	margin: 0;
+	margin-bottom: 5px;
+	
+}
+#shapka a{
+	text-decoration: none;
+	color: gray;
+}
+
+#shapka h2 {
+	color: gray;
+	font-size: 20px;
+	text-align: left;
+	margin: 0;
+}
+
+
+#shapka i {
+	color: white;
+}
+
+
+#opis {
+	margin-top: 30px;
+	text-align: left;
+	width: 70%;
+	font-size: 20px;
+}
+
+#opis p {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+hr {
+	display: none;
+}
+
+#texto {
+	text-align: left;
+
+	font-size: 18px;
+	margin-top: 150px;
+}
+
+#buy {
+	padding: 10px 10px;
+	background: #111111;
+	border-radius: 12px;
+	text-align: left;
+	font-size: 20px;
+	margin-top:150px;
+}
+
+#buy a {
+	text-align: none;
+	color: white;
+	text-decoration: none;
+	background: linear-gradient(0deg, rgb(0, 120, 255), rgb(0, 226, 232));
+	border-radius: 8px;
+	padding: 12px 12px;
+}
+
+#bookinstr {
+	padding: 17px 17px;
+	text-align: center;
+}
+
+#bookinstr img {
+
+	width:160px;
+	height: 240px;
+	
+	
+	
+}
+#bookinstr button {
+	background: none;
+	border: none;
+	color: white;
+	text-decoration: none;
+	padding: 17px 17px;
+
+}
+
+
+#bookinstr a {
+	font-size: 17px;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+	font-family: Rubik,sans-serif;
+	margin: 0;
+}
+
+
+#bookinstr p {
+	margin: 0;
+	padding: 4px 4px;
+	font-family: sans-serif;
+
+}
+
+
+#bookinstrspan {
+	font-size: 15px;
+	
+	
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	body{
+		
+		
+		
+	}
+	#logo {
+	font-family: 'Romero', sans-serif;
+	font-size: 70px;
+	
+
+}
+	.openbtn {
+	font-size: 50px;
+	background: none;
+	border: none;
+	color: white;
+	
+	
+	transition: 0.2s;
+	border-radius: 4px;
+	float: left;
+	
+	font-weight: 600;
+}
+
+
+	.navbar {
+		overflow: hidden;
+		padding: 15px 15px;
+		position: fixed;
+		
+		top: 0;
+		width: 100%;
+		padding-right: 15px;
+
+  
+}
+
+	/* На боковой панели */
+	.sidebar a {
+		padding: 30px 8px 8px 42px;
+		text-decoration: none;
+		font-size: 62px;
+		color: #818181;
+		display: block;
+		margin-top: 30px;
+	margin-bottom: 30px;
+		color: white;
+
+}
+	
+	.main {
+		padding: 16px;
+		margin: 15px;
+		margin-top: 120px;
+		
+		
+		max-width: 1200px;
+		color: white;
+		text-align: center;
+  
+}
+	#mig {
+		font-size: 70px;
+		text-align: center;
+		
+	}
+	#contacts button{
+	border: none;
+		background: #111111;
+	color: white;
+	border-radius: 22px;
+	
+	padding: 15px 15px;
+	padding-top: 30px;
+	font-size: 50px;
+	margin: 15px;
+	cursor: pointer;
+	width: 300px;
+	height: 350px;
+}
+	#contacts i {
+		font-size: 120px;
+	}
+	
+	#contactsx button{
+	border: none;
+		
+	color: white;
+	border-radius: 22px;
+	
+	padding: 15px 15px;
+	padding-top: 30px;
+	font-size: 50px;
+	margin: 15px;
+	cursor: pointer;
+	width: 300px;
+	height: 350px;
+}
+	#contactsx i {
+		font-size: 120px;
+	}
+	
+	#shapka img {
+		width: 620px;
+		height: 900px;
+		text-align: center;
+		float: none;
+		margin-bottom: 30px;
+}
+	#shapka h1 {
+	text-align: center;
+	font-size: 60px;
+	
+}
+	#shapka h2 {
+	color: gray;
+	font-size: 40px;
+	text-align: center;
+	margin: 0;
+	
+}
+	#opis {
+	text-align: left;
+	width: 100%;
+	font-size: 50px;
+	
+}
+	#opis p {
+		
+		margin: 35px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+}
+	hr {
+		display: block;
+		margin: 50px;
+}
+	#texto {
+	text-align: left;
+	margin: 50px;
+	font-size: 30px;
+}
+		/* Положение и стиль кнопки закрытия (верхний правый угол) */
+	.sidebar .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 70px;
+		margin-left: 50px;
+		padding-bottom: 30px;
+}
+
+	#buy {
+	padding: 30px 30px;
+	background: #111111;
+	border-radius: 32px;
+	text-align: left;
+	font-size: 40px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+#buy a {
+	text-align: none;
+	color: white;
+	text-decoration: none;
+	background: linear-gradient(0deg, rgb(0, 120, 255), rgb(0, 226, 232));
+	border-radius: 22px;
+	padding: 22px 22px;
+		font-size: 60px;
+}
+	#bookinstr {
+	padding: 17px 17px;
+	text-align: center;
+}
+
+
+#bookinstr button {
+	background: none;
+	border: none;
+	color: white;
+	text-decoration: none;
+	padding: 17px 17px;
+
+}
+
+#bookinstrspan {
+	font-size: 30px;
+	
+	
+}
+#bookinstr a {
+	font-size: 35px;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+	font-family: Rubik,sans-serif;
+
+}
+
+
+#bookinstr p {
+	margin: 0;
+	padding: 4px 4px;
+	font-family: sans-serif;
+
+}
+
+
+#bookinstr img {
+
+	width:300px;
+	height: 450px;
+	
+	
+	
+}
+
+}
